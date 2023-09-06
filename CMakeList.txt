@@ -1,0 +1,16 @@
+# CMakeList.txt : CMake project for FinalProject, include source and define
+# project specific logic here.
+#
+cmake_minimum_required (VERSION 3.8)
+
+
+project ("FinalProject")
+
+# Add source to this project's executable.
+add_executable (FinalProject "CPP.cpp" "CPP.h")
+
+
+# TODO: Add tests and install targets if needed.
+target_include_directories(FinalProject PUBLIC "./include")
+target_link_directories(FinalProject PUBLIC "./lib")
+target_link_libraries(FinalProject sfml-main-d sfml-graphics-d sfml-system-d sfml-window-d tgui-d)
